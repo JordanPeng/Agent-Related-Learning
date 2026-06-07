@@ -69,6 +69,11 @@ hf_token*
 *secret*
 *.secrets
 
+# ----- Personal notes (keep local, not in a public repo) -----
+beautified_notion/microsoft_benefits_directory.md
+beautified_notion/profile_executive_reference.md
+beautified_notion/resume_portfolio_details.md
+
 # ----- OS cruft -----
 .DS_Store
 Thumbs.db
