@@ -1,0 +1,4 @@
+# Benchmark datasets are NOT stored in git (~5 GB).
+# Re-download them with:
+#   python scripts/download_data.py            # all
+#   python scripts/download_data.py ifeval ruler   # a subset

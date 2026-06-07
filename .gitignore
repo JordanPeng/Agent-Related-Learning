@@ -1,0 +1,85 @@
+# ======================================================================
+#  agent_learning — .gitignore
+#  Big, reproducible assets are excluded; helper scripts, notes, notebooks,
+#  lock files and curated papers are kept.
+# ======================================================================
+
+# ----- Python virtual environments -----
+.venv/
+venv/
+env/
+ENV/
+.venv-wsl/
+.uv/
+
+# ----- Model weights (~80 GB) — re-fetch with `hf download` / scripts -----
+/LLM_model_weights/*
+!/LLM_model_weights/.gitkeep
+
+# ----- Benchmark datasets (~5 GB) — re-fetch with scripts/download_data.py -----
+/datasets/*
+!/datasets/.gitkeep
+
+# ----- Python build / cache artifacts -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+
+# ----- Jupyter -----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ----- Hugging Face / model & kernel caches -----
+.cache/
+**/.cache/
+.triton/
+**/flashinfer/
+*.lock
+
+# ----- Experiment tracking / logs / outputs -----
+wandb/
+runs/
+lightning_logs/
+tensorboard/
+outputs/
+checkpoints/
+*.log
+
+# ----- Secrets / credentials (never commit) -----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+hf_token*
+*secret*
+*.secrets
+
+# ----- OS cruft -----
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ----- Editor / IDE -----
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

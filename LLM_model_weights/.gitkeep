@@ -1,0 +1,5 @@
+# Model weights are NOT stored in git (~80 GB).
+# Download them locally with the Hugging Face CLI, e.g.:
+#   hf download google/gemma-4-12B-it --local-dir gemma-4-12B-it
+#   hf download Qwen/Qwen3-14B        --local-dir Qwen3-14B
+#   hf download Qwen/Qwen3-1.7B       --local-dir Qwen3-1.7B

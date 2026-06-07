@@ -1,0 +1,78 @@
+# Agent-learning workspace — top-level dependencies
+# Install into a CUDA 12.8 (Blackwell / RTX 5090) environment.
+#
+#   uv venv --python 3.12 .venv
+#   .\.venv\Scripts\Activate.ps1
+#   uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+#   uv pip install -r requirements.txt
+#
+# For exact pinned versions of the verified-working environment, use requirements-lock.txt instead.
+
+# --- core DL / HF stack ---
+transformers
+accelerate
+datasets
+tokenizers
+safetensors
+huggingface_hub
+hf_xet
+hf_transfer
+sentencepiece
+protobuf
+einops
+gguf
+
+# --- training / fine-tuning / quantization ---
+peft
+trl
+optimum
+bitsandbytes
+evaluate
+
+# --- embeddings / retrieval ---
+sentence-transformers
+faiss-cpu
+
+# --- agent frameworks + LLM API clients ---
+langchain
+langchain-community
+langchain-core
+langgraph
+langchain-openai
+langchain-anthropic
+langchain-huggingface
+openai
+anthropic
+tiktoken
+
+# --- agent tools ---
+duckduckgo-search
+wikipedia
+
+# --- data / scientific ---
+numpy
+scipy
+pandas
+scikit-learn
+pyarrow
+matplotlib
+seaborn
+
+# --- notebooks / dev UX ---
+jupyterlab
+notebook
+ipykernel
+ipywidgets
+rich
+typer
+tqdm
+pydantic
+
+# --- experiment tracking + GPU utils ---
+wandb
+tensorboard
+nvidia-ml-py
+gpustat
+
+# --- Windows torch.compile / triton kernels (optional but installed) ---
+triton-windows

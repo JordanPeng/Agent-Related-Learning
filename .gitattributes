@@ -1,0 +1,21 @@
+# Normalize line endings by default; Git decides text vs binary.
+* text=auto
+
+# Shell scripts MUST be LF — they run under WSL/Linux.
+*.sh text eol=lf
+
+# Windows scripts stay CRLF.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Treat notebooks and binaries as-is (no EOL munging, no diff noise).
+*.ipynb -text
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.safetensors binary
+*.gguf binary
+*.bin binary
