@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "llm-finetuning": {
+      "source": "RightNow-AI/openfang",
+      "sourceType": "github",
+      "skillPath": "crates/openfang-skills/bundled/llm-finetuning/SKILL.md",
+      "computedHash": "7bc695a3a124e6ef5e8204e6a1e42ccef97f0000106149c96818c294c029eebc"
+    }
+  }
+}
